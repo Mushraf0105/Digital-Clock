@@ -30,5 +30,5 @@ This project is configured to be deployed using **GitHub Pages** (as it is a sta
 If a deployment introduces a breaking change or bug, rollbacks are handled natively through Git version control:
 1. **Identify the stable commit**: Use `git log` to find the last working commit hash.
 2. **Revert the change**: Run `git revert <commit-hash>` to safely undo the problematic changes while preserving the commit history.
-3. **Redeploy (Rollback)**: Push the reverted state back to the `main` branch (`git push origin main`). GitHub Pages will automatically redeploy the restored, stable version.
+3. **Rollback**: Push the reverted state back to the `main` branch (`git push origin main`). GitHub Pages will automatically redeploy the restored, stable version.
 *(Note for reviewer: Please check the Git commit history of this repository for any active rollback evidence).*
